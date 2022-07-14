@@ -22,7 +22,7 @@ class Actor(models.Model):
     # of the Django-provided default, 'actor_set' (so use
     # "related_name='actors'" to pass the test).
     # You need 'through='Role' in order to join the Move and Actor tables
-    # through the Role table, otherwise Django will create it's own throug
+    # through the Role table, otherwise Django will create it's own through
     # table.
     movies = models.ManyToManyField(Movie, through='Role', related_name='actors')
 
